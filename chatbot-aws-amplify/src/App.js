@@ -46,14 +46,6 @@ class App extends Component {
     })
     messages  = [...this.state.messages, responseMessage]
     this.setState({ messages })
-
-    if (response.dialogState === 'Fulfilled') {
-      if (response.intentName === 'BookTripBookHotel') {
-        const { slots: { BookTripCheckInDate, BookTripLocation, BookTripNights, BookTripRoomType } } = response
-        const finalMessage = `Congratulations! Your trip to ${BookTripLocation}  with a ${BookTripRoomType} room on ${BookTripCheckInDate} for ${BookTripNights} days has been booked!!`
-        this.setState({ finalMessage })
-      }
-    }
   }
   render() {
     return (
