@@ -1,0 +1,292 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "big mike",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetBodyMassIndexIntent",
+                    "slots": [],
+                    "samples": [
+                        "get my B M I",
+                        "get my body mass index"
+                    ]
+                },
+                {
+                    "name": "GetBodyMassIndexHeightIntent",
+                    "slots": [
+                        {
+                            "name": "HeightCentimeters",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "my height is {HeightCentimeters} centimeters",
+                        "my height is {HeightCentimeters}",
+                        "{HeightCentimeters} centimeters"
+                    ]
+                },
+                {
+                    "name": "GetBodyMassIndexWeightIntent",
+                    "slots": [
+                        {
+                            "name": "WeightKilograms",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "my weight is {WeightKilograms} kilograms",
+                        "my weight is {WeightKilograms}",
+                        "{WeightKilograms} kilograms"
+                    ]
+                },
+                {
+                    "name": "GetNutritionFactIntent",
+                    "slots": [
+                        {
+                            "name": "Food",
+                            "type": "Food"
+                        }
+                    ],
+                    "samples": [
+                        "nutrition fact for {Food}",
+                        "nutrition fact for one cup of {Food}"
+                    ]
+                },
+                {
+                    "name": "GetDietForUnderweightIntent",
+                    "slots": [],
+                    "samples": [
+                        "diet for under weight",
+                        "diet for underweight"
+                    ]
+                },
+                {
+                    "name": "GetDietForNormalWeightIntent",
+                    "slots": [],
+                    "samples": [
+                        "diet for normal weight"
+                    ]
+                },
+                {
+                    "name": "GetDietForOverweightIntent",
+                    "slots": [],
+                    "samples": [
+                        "diet for over weight",
+                        "diet for overweight"
+                    ]
+                },
+                {
+                    "name": "GetDietForObeseIntent",
+                    "slots": [],
+                    "samples": [
+                        "diet for obese"
+                    ]
+                },
+                {
+                    "name": "GetGymProgramForUnderweightIntent",
+                    "slots": [],
+                    "samples": [
+                        "gym program for under weight",
+                        "gym program for underweight"
+                    ]
+                },
+                {
+                    "name": "GetGymProgramForNormalWeightIntent",
+                    "slots": [],
+                    "samples": [
+                        "gym program for normal weight"
+                    ]
+                },
+                {
+                    "name": "GetGymProgramForOverweightIntent",
+                    "slots": [],
+                    "samples": [
+                        "gym program for over weight",
+                        "gym program for overweight"
+                    ]
+                },
+                {
+                    "name": "GetGymProgramForObeseIntent",
+                    "slots": [],
+                    "samples": [
+                        "gym program for obese"
+                    ]
+                },
+                {
+                    "name": "GetAddCartEnervonCIntent",
+                    "slots": [],
+                    "samples": [
+                        "add Enervon C to my cart",
+                        "add Enervon C"
+                    ]
+                },
+                {
+                    "name": "GetAddCartOptimumNutritionWheyProteinIntent",
+                    "slots": [],
+                    "samples": [
+                        "add Optimum Nutrition Whey Protein to my cart",
+                        "add Optimum Nutrition Whey Protein"
+                    ]
+                },
+                {
+                    "name": "GetAddCartCentrumMultivitaminIntent",
+                    "slots": [],
+                    "samples": [
+                        "add Centrum Multivitamins to my cart",
+                        "add Centrum Multivitamins",
+                        "add Centrum Multivitamin to my cart",
+                        "add Centrum Multivitamin"
+                    ]
+                },
+                {
+                    "name": "GetAddCartMuscleTechCreatineIntent",
+                    "slots": [],
+                    "samples": [
+                        "add Muscle Tech Creatine to my cart",
+                        "add Muscle Tech Creatine"
+                    ]
+                },
+                {
+                    "name": "GetAddCartHydroxycutHardcoreIntent",
+                    "slots": [],
+                    "samples": [
+                        "add Hydroxycut to my cart",
+                        "add Hydroxycut",
+                        "add Hydroxycut Hardcore to my cart",
+                        "add Hydroxycut Hardcore"
+                    ]
+                },
+                {
+                    "name": "GetAddCartOptimumNutritionLGlutamineIntent",
+                    "slots": [],
+                    "samples": [
+                        "add Optimum Nutrition L Glutamine to my cart",
+                        "add Optimum Nutrition L Glutamine"
+                    ]
+                },
+                {
+                    "name": "GetAddCartAnimalPakMultivitaminIntent",
+                    "slots": [],
+                    "samples": [
+                        "add Animal Pak Multivitamins to my cart",
+                        "add Animal Pak Multivitamins",
+                        "add Animal Pak Multivitamin to my cart",
+                        "add Animal Pak Multivitamin"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Food",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "pizza"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "donut"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cabbage"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "broccoli"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "asparagus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chicken"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pepper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "grape"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "guava"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "durian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coconut"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cherry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blueberry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "avocado"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "banana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "apple"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rice"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
