@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Interactions } from 'aws-amplify';
-import { ChatFeed, Message } from 'react-chat-ui'
-import { Widget, addResponseMessage, addLinkSnippet, addUserMessage } from 'react-chat-widget';
+import { Widget, addResponseMessage } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
+import './index.css';
 
 class App extends Component {
   componentDidMount() {
@@ -24,7 +24,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" className="bg">
         <Widget
           handleNewUserMessage={this.handleNewUserMessage}
           profileAvatar={logo}
