@@ -5,6 +5,7 @@ import { Interactions } from 'aws-amplify';
 import { Widget, addResponseMessage } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
 import './index.css';
+import axios from 'axios'
 
 class App extends Component {
   componentDidMount() {
@@ -19,11 +20,21 @@ class App extends Component {
 
   async submitMsg(input) {
     const response = await Interactions.send("BigMikeBotMOBILEHUB", input);
-    addResponseMessage(response.message);
+    if (response.intentName === 'GetNutritionFactIntent') {
+      const { slots: { Food } } = response;
+
+      axios.get('http://aws2019.gigamike.net/api/nutrition-fact?food=' + Food)
+        .then(response => {
+        addResponseMessage(JSON.stringify(response.data.text));
+      });
+    }else{
+      addResponseMessage(response.message);
+    }
   }
 
   render() {
     return (
+      // eslint-disable-next-line
       <div className="App" className="bg">
         <Widget
           handleNewUserMessage={this.handleNewUserMessage}
