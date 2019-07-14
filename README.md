@@ -1,19 +1,22 @@
-﻿# Big Mike Personal Trainer (HealthTech)
+# Big Mike Personal Trainer (HealthTech)
 
 Coach Big Mike Personal Trainer (HealthTech). Fitness partner through Health Technology.
 
-We chose HealthTech category, health recommendations using a chatbot interface. We created an app called “Big Mike” your personal trainer powered by Alexa.
+An online platform that brings professional fitness coach, their health products and health conscious market together.
 
 # The problem we are trying to solve are as follows:
 
 Personal Trainer Availability.
 
- - Unhealthy person doesn’t know where to start. 
- - “What/How“ gym programs. 
- - What kind of food to eat or diet? 
- - No 24 hours trainer.
+ - Weight Problem
+    - Unhealthy person doesn’t know where to start. 
+    - “What/How“ gym programs. 
+    - What kind of food to eat or diet? 
+    - No 24 hours trainer.
+ - Lack of Motivation. 
  - Lack of Nutrition Facts Label. 
- - Lack of information about supplements.
+ - Lack of information about health products.
+ - Native Chatbot is Boring.
 
 ## "Big Mike" app features are as follows:
 
@@ -21,11 +24,11 @@ Personal Trainer Availability.
  - Food and diet recommendations.
  - Gym program recommendations.
  - Nutrition Facts voice assistant.
- - Order supplements online.
+ - Order health products/supplements online.
 
 ”Big Mike” app recommend what kind of diet or food to eat, gym program and what supplement to take. User can order online through web or by voice assistant.
 
-What makes “Big Mike“ app unique is that its not just a web app but also an Alexa Skills app.
+What makes “Big Mike“ app unique is that its not just a web app but also runs on smart appliances.
 
 ## We used the following AWS Services:
 
